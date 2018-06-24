@@ -1,0 +1,496 @@
+{
+    "nodes": [
+        {
+            "name": "Performance",
+            "color": "1a78b6",
+            "index": 0
+        },
+        {
+            "name": "User Experience",
+            "color": "1a78b6",
+            "index":1
+        },
+        {
+            "name": "Interpretation/Semantics",
+            "color": "1a78b6",
+            "index":2
+        },
+        {
+            "name": "Accuracy",
+            "color": "f18e29",
+            "index":3
+        },
+        {
+            "name": "Risk aversion",
+            "color": "f18e29",
+            "index":4
+        },
+        {
+            "name": "Decision quality",
+            "color": "f18e29",
+            "index":5
+        },
+        {
+            "name": "None implied",
+            "color": "f18e29",
+            "index":6
+        },
+        {
+            "name": "Trust/confidence",
+            "color": "f18e29",
+            "index":7
+        },
+        {
+            "name": "Satisfaction",
+            "color": "f18e29",
+            "index":8
+        },
+        {
+            "name": "Test impact of uncertainty",
+            "color": "77b8b3",
+            "index":9
+        },
+        {
+            "name": "Compare visualizations",
+            "color": "77b8b3",
+            "index":10
+        },
+        {
+            "name": "Compare users",
+            "color": "77b8b3",
+            "index":11
+        },
+        {
+            "name": "Validate visualization",
+            "color": "77b8b3",
+            "index":12
+        },
+        {
+            "name": "Understand use",
+            "color": "77b8b3",
+            "index":13
+        },
+        {
+            "name": "Decision",
+            "color": "b07aa1",
+            "index":14
+        },
+        {
+            "name": "Error",
+            "color": "b07aa1",
+            "index":15
+        },
+        {
+            "name": "Compliance with strategy",
+            "color": "b07aa1",
+            "index":16
+        },
+        {
+            "name": "Utility Maximization",
+            "color": "b07aa1",
+            "index":17
+        },
+        {
+            "name": "Bias",
+            "color": "b07aa1",
+            "index":18
+        },
+        {
+            "name": "Strategy",
+            "color": "b07aa1",
+            "index":19
+        },
+        {
+            "name": "Multiple choice",
+            "color": "edc848",
+            "index":20
+        },
+        {
+            "name": "Text entry",
+            "color": "edc848",
+            "index":21
+        },
+        {
+            "name": "Direct selection",
+            "color": "edc848",
+            "index":22
+        },
+        {
+            "name": "Likert",
+            "color": "edc848",
+            "index":23
+        },
+        {
+            "name": "Unspecified",
+            "color": "edc848",
+            "index":24
+        },
+        {
+            "name": "Slider",
+            "color": "edc848",
+            "index":25
+        },
+        {
+            "name": "Spoken response",
+            "color": "edc848",
+            "index":26
+        },
+        {
+            "name": "Think-aloud protocol",
+            "color": "edc848",
+            "index":27
+        },
+        {
+            "name": "Summary stats",
+            "color": "58a14d",
+            "index":28
+        },
+        {
+            "name": "Frequentist NHST",
+            "color": "58a14d",
+            "index":29
+        },
+        {
+            "name": "Qualitative coding",
+            "color": "58a14d",
+            "index":30
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 3,
+            "value": 11
+        },
+        {
+            "source": 0,
+            "target": 4,
+            "value": 4
+        },
+        {
+            "source": 0,
+            "target": 5,
+            "value": 8
+        },
+        {
+            "source": 0,
+            "target": 6,
+            "value": 3
+        },
+        {
+            "source": 1,
+            "target": 7,
+            "value": 1
+        },
+        {
+            "source": 1,
+            "target": 8,
+            "value": 1
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "value": 1
+        },
+        {
+            "source": 2,
+            "target": 6,
+            "value": 3
+        },
+        {
+            "source": 2,
+            "target": 7,
+            "value": 2
+        },
+        {
+            "source": 3,
+            "target": 9,
+            "value": 10
+        },
+        {
+            "source": 3,
+            "target": 10,
+            "value": 7
+        },
+        {
+            "source": 4,
+            "target": 9,
+            "value": 2
+        },
+        {
+            "source": 4,
+            "target": 10,
+            "value": 2
+        },
+        {
+            "source": 4,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 5,
+            "target": 9,
+            "value": 3
+        },
+        {
+            "source": 5,
+            "target": 10,
+            "value": 7
+        },
+        {
+            "source": 6,
+            "target": 9,
+            "value": 1
+        },
+        {
+            "source": 6,
+            "target": 10,
+            "value": 2
+        },
+        {
+            "source": 6,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 6,
+            "target": 13,
+            "value": 4
+        },
+        {
+            "source": 7,
+            "target": 9,
+            "value": 2
+        },
+        {
+            "source": 7,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 8,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 9,
+            "target": 14,
+            "value": 18
+        },
+        {
+            "source": 10,
+            "target": 14,
+            "value": 19
+        },
+        {
+            "source": 11,
+            "target": 14,
+            "value": 2
+        },
+        {
+            "source": 12,
+            "target": 14,
+            "value": 1
+        },
+        {
+            "source": 13,
+            "target": 14,
+            "value": 4
+        },
+        {
+            "source": 14,
+            "target": 15,
+            "value": 4
+        },
+        {
+            "source": 14,
+            "target": 16,
+            "value": 2
+        },
+        {
+            "source": 14,
+            "target": 17,
+            "value": 6
+        },
+        {
+            "source": 14,
+            "target": 18,
+            "value": 6
+        },
+        {
+            "source": 14,
+            "target": 19,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 20,
+            "value": 10
+        },
+        {
+            "source": 14,
+            "target": 21,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 22,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 23,
+            "value": 4
+        },
+        {
+            "source": 14,
+            "target": 24,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 26,
+            "value": 1
+        },
+        {
+            "source": 15,
+            "target": 20,
+            "value": 3
+        },
+        {
+            "source": 15,
+            "target": 24,
+            "value": 1
+        },
+        {
+            "source": 16,
+            "target": 20,
+            "value": 2
+        },
+        {
+            "source": 17,
+            "target": 20,
+            "value": 4
+        },
+        {
+            "source": 17,
+            "target": 21,
+            "value": 1
+        },
+        {
+            "source": 18,
+            "target": 20,
+            "value": 3
+        },
+        {
+            "source": 18,
+            "target": 25,
+            "value": 1
+        },
+        {
+            "source": 19,
+            "target": 27,
+            "value": 1
+        },
+        {
+            "source": 20,
+            "target": 28,
+            "value": 21
+        },
+        {
+            "source": 20,
+            "target": 29,
+            "value": 19
+        },
+        {
+            "source": 20,
+            "target": 30,
+            "value": 2
+        },
+        {
+            "source": 21,
+            "target": 28,
+            "value": 2
+        },
+        {
+            "source": 21,
+            "target": 29,
+            "value": 2
+        },
+        {
+            "source": 22,
+            "target": 28,
+            "value": 1
+        },
+        {
+            "source": 22,
+            "target": 29,
+            "value": 1
+        },
+        {
+            "source": 23,
+            "target": 28,
+            "value": 3
+        },
+        {
+            "source": 23,
+            "target": 29,
+            "value": 2
+        },
+        {
+            "source": 24,
+            "target": 28,
+            "value": 2
+        },
+        {
+            "source": 24,
+            "target": 29,
+            "value": 1
+        },
+        {
+            "source": 25,
+            "target": 28,
+            "value": 1
+        },
+        {
+            "source": 25,
+            "target": 29,
+            "value": 1
+        },
+        {
+            "source": 26,
+            "target": 28,
+            "value": 1
+        },
+        {
+            "source": 26,
+            "target": 30,
+            "value": 1
+        },
+        {
+            "source": 27,
+            "target": 28,
+            "value": 1
+        },
+        {
+            "source": 27,
+            "target": 30,
+            "value": 1
+        },
+        {
+            "source": 17,
+            "target": 23,
+            "value": 1
+        },
+        {
+            "source": 18,
+            "target": 22,
+            "value": 1
+        },
+        {
+            "source": 18,
+            "target": 26,
+            "value": 1
+        }
+    ]
+}

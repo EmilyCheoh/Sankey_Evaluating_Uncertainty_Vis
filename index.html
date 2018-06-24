@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Sankey Layout Alignment</title>
+<style>
+	body {
+		font: 16px Sans-serif;
+	}
+
+	.node rect {
+		fill-opacity: .9;
+		shape-rendering: crispEdges;
+	}
+
+	.node text {
+		font: 11px sans-serif;
+		pointer-events: none;
+		text-shadow: 0 1px 0 #fff;
+	}
+
+	.link {
+		fill: none;
+		stroke: darkblue;
+		stroke-opacity: .2;
+	}
+
+	.link:hover {
+		stroke-opacity: .5;
+	}
+
+	/*accordion styling*/
+
+	/* Style the buttons that are used to open and close the accordion panel */
+
+	.accordion {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		text-align: left;
+		border: none;
+		outline: none;
+		transition: 0.4s;
+	}
+
+	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+	.active,
+	.accordion:hover {
+		background-color: #ccc;
+	}
+
+	/* Style the accordion panel. Note: hidden by default */
+
+	.panel {
+		padding: 0 18px;
+		background-color: white;
+		display: none;
+		overflow: hidden;
+	}
+</style>
+
+<body>
+	<button class="accordion">
+		<h3>Full (81 studies)</h3>
+	</button>
+	<div class="panel" id="full"></div>
+
+
+	<button class="accordion">
+		<h3>Performance</h3>
+	</button>
+	<div class="panel" id="subp"></div>
+
+	<button class="accordion">
+		<h3>Performance - Accuracy</h3>
+	</button>
+	<div class="panel" id="subpacc"></div>
+
+	<!--<button class="accordion"><h3>Performance - Not Accuracy</h3></button>
+  <div class="panel" id="subpnacc"></div>-->
+
+
+	<button class="accordion">
+		<h3>Interpretation and Semantics</h3>
+	</button>
+	<div class="panel" id="subis"></div>
+
+
+	<button class="accordion">
+		<h3>User Experience</h3>
+	</button>
+	<div class="panel" id="subue"></div>
+
+	<button class="accordion">
+		<h3>Subjective Confidence</h3>
+	</button>
+	<div class="panel" id="subc"></div>
+
+
+	<button class="accordion">
+		<h3>Decisions</h3>
+	</button>
+	<div class="panel" id="subd"></div>
+
+	<br/>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.2.0/d3.min.js"></script>
+	<script src="sankey.js"></script>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				/* Toggle between adding and removing the "active" class,
+				to highlight the button that controls the panel */
+				this.classList.toggle("active");
+
+				/* Toggle between hiding and showing the active panel */
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+
+		var margin = {
+			top: 5,
+			right: 1,
+			bottom: 6,
+			left: 1
+		},
+			width = window.innerWidth - 50 - margin.left - margin.right,
+			height = 450 - margin.top - margin.bottom,
+			animDuration = 800;
+
+		var formatNumber = d3.format(",.0f"),
+			format = function (d) {
+				return formatNumber(d) + " instances";
+			};
+
+		/* ------------------------------------- */
+
+		var svg = d3.select("#full").append("svg")
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom)
+			.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		var flinks = svg.append("g"),
+			fnodes = svg.append("g");
+
+		var fsankey = d3.sankey()
+			.nodeWidth(15)
+			.nodePadding(10)
+			.size([width, height])
+			.align('justify');
+
+		var fpath = fsankey.link();
+
+		d3.json("sankey.json", function (energy) {
+			console.log(energy);
+			fsankey
+				.nodes(energy.nodes)
+				.links(energy.links)
+				.layout(32)
+			d3Digest(fsankey, flinks, fnodes, fpath);
+		});
+
+
+
+
+
+		/* ---------------------------------------------------- */
+
+		var svg3 = d3.select("#subp").append("svg")
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom - 200)
+			.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		var links3 = svg3.append("g"),
+			nodes3 = svg3.append("g");
+
+		var sankey3 = d3.sankey()
+			.nodeWidth(15)
+			.nodePadding(10)
+			.size([width, height - 200])
+			.align('justify');
+
+		var path3 = sankey3.link();
+
+		d3.json("sankey_performance.json", function (energy) {
+			console.log(energy);
+			sankey3
+				.nodes(energy.nodes)
+				.links(energy.links)
+				.layout(32);
+
+			d3Digest(sankey3, links3, nodes3, path3);
+		});
+
+		/* --------------------------------------------- */
+
+		var svg4 = d3.select("#subpacc").append("svg")
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom - 200)
+			.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		var links4 = svg4.append("g"),
+			nodes4 = svg4.append("g");
+
+		var sankey4 = d3.sankey()
+			.nodeWidth(15)
+			.nodePadding(10)
+			.size([width, height - 200])
+			.align('justify');
+
+		var path4 = sankey4.link();
+
+		d3.json("sankey_perf_acc.json", function (energy) {
+			console.log(energy);
+			sankey4
+				.nodes(energy.nodes)
+				.links(energy.links)
+				.layout(32);
+
+			d3Digest(sankey4, links4, nodes4, path4);
+		});
+
+		/*
+			var svg5 = d3.select("#subpnacc").append("svg")
+			  .attr("width", width + margin.left + margin.right)
+			  .attr("height", height + margin.top + margin.bottom-200)
+			  .append("g")
+			  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	    
+			var links5 = svg5.append("g"),
+				nodes5 = svg5.append("g");
+	    
+			var sankey5 = d3.sankey()
+			  .nodeWidth(15)
+			  .nodePadding(10)
+			  .size([width, height-200])
+			  .align('justify');
+	    
+			var path5 = sankey4.link();
+	    
+			d3.json("sankey_perf_notacc.json", function(energy) {
+				console.log(energy);
+			  sankey5
+				.nodes(energy.nodes)
+				.links(energy.links)
+				.layout(32);
+	    
+			  d3Digest(sankey5, links5, nodes5, path5);
+			});
+		*/
+
+		var svg6 = d3.select("#subis").append("svg")
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom - 200)
+			.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		var links6 = svg6.append("g"),
+			nodes6 = svg6.append("g");
+
+		var sankey6 = d3.sankey()
+			.nodeWidth(15)
+			.nodePadding(10)
+			.size([width, height - 200])
+			.align('justify');
+
+		var path6 = sankey6.link();
+
+		d3.json("sankey_interpretation.json", function (energy) {
+			console.log(energy);
+			sankey6
+				.nodes(energy.nodes)
+				.links(energy.links)
+				.layout(32);
+
+			d3Digest(sankey6, links6, nodes6, path6);
+		});
+
+		/* ------------------------------ */
+
+		var svg7 = d3.select("#subue").append("svg")
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom - 200)
+			.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		var links7 = svg7.append("g"),
+			nodes7 = svg7.append("g");
+
+		var sankey7 = d3.sankey()
+			.nodeWidth(15)
+			.nodePadding(10)
+			.size([width, height - 200])
+			.align('justify');
+
+		var path7 = sankey7.link();
+
+		d3.json("sankey_experience.json", function (energy) {
+			console.log(energy);
+			sankey7
+				.nodes(energy.nodes)
+				.links(energy.links)
+				.layout(32);
+
+			d3Digest(sankey7, links7, nodes7, path7);
+		});
+
+/* ------------------------------ */
+
+		var svg8 = d3.select("#subc").append("svg")
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom - 200)
+			.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		var links8 = svg8.append("g"),
+			nodes8 = svg8.append("g");
+
+		var sankey8 = d3.sankey()
+			.nodeWidth(15)
+			.nodePadding(10)
+			.size([width, height - 200])
+			.align('justify');
+
+		var path8 = sankey8.link();
+
+		d3.json("sankey_confidence.json", function (energy) {
+			console.log(energy);
+			sankey8
+				.nodes(energy.nodes)
+				.links(energy.links)
+				.layout(32);
+
+			d3Digest(sankey8, links8, nodes8, path8);
+		});
+
+/* ---------------------------------- */
+
+		var svg9 = d3.select("#subd").append("svg")
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom - 200)
+			.append("g")
+			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		var links9 = svg9.append("g"),
+			nodes9 = svg9.append("g");
+
+		var sankey9 = d3.sankey()
+			.nodeWidth(15)
+			.nodePadding(10)
+			.size([width, height - 200])
+			.align('justify');
+
+		var path9 = sankey9.link();
+
+		d3.json("sankey_decision.json", function (energy) {
+			console.log(energy);
+			sankey9
+				.nodes(energy.nodes)
+				.links(energy.links)
+				.layout(32);
+
+			d3Digest(sankey9, links9, nodes9, path9);
+		});
+
+
+
+		function d3Digest(sankey, links, nodes, path) {
+
+			var link = links.selectAll(".link")
+				.data(sankey.links());
+
+			var newLink = link.enter().append("path")
+				.attr("class", "link")
+				.style("stroke-width", function (d) {
+					return Math.max(1, d.dy) + 'px';
+				});
+
+			newLink.append("title")
+				.text(function (d) {
+					return d.source.name + " → " + d.target.name + "\n" + format(d.value);
+				});
+
+			link = newLink.merge(link);
+
+			link.transition().duration(animDuration)
+				.attr("d", path)
+				.style("stroke-width", function (d) {
+					return Math.max(1, d.dy) + 'px';
+				});
+
+			var node = nodes.selectAll(".node")
+				.data(sankey.nodes());
+
+			var newNode = node.enter().append("g")
+				.attr("class", "node");
+
+			newNode.attr("transform", function (d) {
+				return "translate(" + d.x + "," + d.y + ")";
+			});
+
+			node.transition().duration(animDuration)
+				.attr("transform", function (d) {
+					return "translate(" + d.x + "," + d.y + ")";
+				});
+
+			node = newNode.merge(node);
+
+			newNode.append('rect');
+			newNode.append('text');
+
+			newNode.select("rect")
+				.attr("width", sankey.nodeWidth())
+				.attr("height", function (d) {
+					return d.dy;
+				})
+				.append("title")
+				.text(function (d) {
+					return d.name + "\n" + format(d.value);
+				});
+
+			node.select("rect")
+				.style("fill", function (d) {
+					return d.color = d.color;
+				})
+				.style("stroke", function (d) {
+					return d3.rgb(d.color).darker(2);
+				})
+				.transition().duration(animDuration)
+				.attr("height", function (d) {
+					return d.dy;
+				});
+
+			newNode.select("text")
+				.attr("dy", ".35em")
+				.attr("transform", null)
+				.attr("y", function (d) {
+					return d.dy / 2;
+				});
+
+			node.select("text")
+				.text(function (d) {
+					return d.name;
+				})
+				.attr("x", -6)
+				.attr("text-anchor", "end")
+				.filter(function (d) {
+					return d.x < width / 2;
+				})
+				.attr("x", 6 + sankey.nodeWidth())
+				.attr("text-anchor", "start");
+
+			node.select('text').transition().duration(animDuration)
+				.attr("y", function (d) {
+					return d.dy / 2;
+				});
+		}
+
+
+	</script>

@@ -1,0 +1,396 @@
+{
+    "nodes": [
+        {
+            "name": "Performance",
+            "color": "1a78b6",
+            "index": 0
+        },
+        {
+            "name": "User Experience",
+            "color": "1a78b6",
+            "index":1
+        },
+        {
+            "name": "Interpretation/Semantics",
+            "color": "1a78b6",
+            "index":2
+        },
+        {
+            "name": "Accuracy",
+            "index":3,
+            "color": "f18e29"
+        },
+        {
+            "name": "Risk aversion",
+            "index":4,
+            "color": "f18e29"
+        },
+        {
+            "name": "Trust/confidence",
+            "index":5,
+            "color": "f18e29"
+        },
+        {
+            "name": "None implied",
+            "index":6,
+            "color": "f18e29"
+        },
+        {
+            "name": "Satisfaction",
+            "index":7,
+            "color": "f18e29"
+        },
+        {
+            "name": "Reading ease",
+            "index":8,
+            "color": "f18e29"
+        },
+        {
+            "name": "Compare users",
+            "index":9,
+            "color": "77b8b3"
+        },
+        {
+            "name": "Compare visualizations",
+            "index":10,
+            "color": "77b8b3"
+        },
+        {
+            "name": "Test impact of uncertainty",
+            "index":11,
+            "color": "77b8b3"
+        },
+        {
+            "name": "Understand use",
+            "index":12,
+            "color": "77b8b3"
+        },
+        {
+            "name": "Validate visualization",
+            "index":13,
+            "color": "77b8b3"
+        },
+        {
+            "name": "Subjective confidence",
+            "index":14,
+            "color": "b07aa1"
+        },
+        {
+            "name": "Change in perception/belief",
+            "index":15,
+            "color": "b07aa1"
+        },
+        {
+            "name": "Correlation with ground truth",
+            "index":16,
+            "color": "b07aa1"
+        },
+        {
+            "name": "Compliance with strategy",
+            "index":17,
+            "color": "b07aa1"
+        },
+        {
+            "name": "Error",
+            "index":18,
+            "color": "b07aa1"
+        },
+        {
+            "name": "Likert",
+            "index":19,
+            "color": "edc848"
+        },
+        {
+            "name": "Text entry",
+            "index":20,
+            "color": "edc848"
+        },
+        {
+            "name": "Unspecified",
+            "index":21,
+            "color": "edc848"
+        },
+        {
+            "name": "Slider",
+            "index":22,
+            "color": "edc848"
+        },
+        {
+            "name": "Frequentist NHST",
+            "index":23,
+            "color": "58a14d"
+        },
+        {
+            "name": "Summary stats",
+            "index":24,
+            "color": "58a14d"
+        },
+        {
+            "index":25,
+            "name": "Bayesian estimation",
+            "color": "58a14d"
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 3,
+            "value": 9
+        },
+        {
+            "source": 0,
+            "target": 4,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 5,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 7,
+            "value": 1
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "value": 7
+        },
+        {
+            "source": 1,
+            "target": 7,
+            "value": 2
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "value": 1
+        },
+        {
+            "source": 2,
+            "target": 6,
+            "value": 2
+        },
+        {
+            "source": 2,
+            "target": 8,
+            "value": 1
+        },
+        {
+            "source": 3,
+            "target": 9,
+            "value": 3
+        },
+        {
+            "source": 3,
+            "target": 10,
+            "value": 9
+        },
+        {
+            "source": 3,
+            "target": 11,
+            "value": 2
+        },
+        {
+            "source": 3,
+            "target": 13,
+            "value": 1
+        },
+        {
+            "source": 4,
+            "target": 9,
+            "value": 1
+        },
+        {
+            "source": 4,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 5,
+            "target": 9,
+            "value": 1
+        },
+        {
+            "source": 5,
+            "target": 10,
+            "value": 6
+        },
+        {
+            "source": 5,
+            "target": 11,
+            "value": 4
+        },
+        {
+            "source": 5,
+            "target": 13,
+            "value": 1
+        },
+        {
+            "source": 6,
+            "target": 10,
+            "value": 2
+        },
+        {
+            "source": 6,
+            "target": 12,
+            "value": 2
+        },
+        {
+            "source": 7,
+            "target": 10,
+            "value": 3
+        },
+        {
+            "source": 7,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 8,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 8,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 9,
+            "target": 14,
+            "value": 5
+        },
+        {
+            "source": 10,
+            "target": 14,
+            "value": 22
+        },
+        {
+            "source": 11,
+            "target": 14,
+            "value": 6
+        },
+        {
+            "source": 12,
+            "target": 14,
+            "value": 4
+        },
+        {
+            "source": 13,
+            "target": 14,
+            "value": 2
+        },
+        {
+            "source": 14,
+            "target": 15,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 16,
+            "value": 2
+        },
+        {
+            "source": 14,
+            "target": 17,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 18,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 19,
+            "value": 13
+        },
+        {
+            "source": 14,
+            "target": 21,
+            "value": 3
+        },
+        {
+            "source": 14,
+            "target": 22,
+            "value": 1
+        },
+        {
+            "source": 15,
+            "target": 19,
+            "value": 1
+        },
+        {
+            "source": 16,
+            "target": 19,
+            "value": 1
+        },
+        {
+            "source": 16,
+            "target": 20,
+            "value": 1
+        },
+        {
+            "source": 17,
+            "target": 20,
+            "value": 1
+        },
+        {
+            "source": 18,
+            "target": 21,
+            "value": 1
+        },
+        {
+            "source": 19,
+            "target": 23,
+            "value": 12
+        },
+        {
+            "source": 19,
+            "target": 24,
+            "value": 13
+        },
+        {
+            "source": 20,
+            "target": 23,
+            "value": 2
+        },
+        {
+            "source": 20,
+            "target": 24,
+            "value": 2
+        },
+        {
+            "source": 21,
+            "target": 23,
+            "value": 1
+        },
+        {
+            "source": 21,
+            "target": 24,
+            "value": 4
+        },
+        {
+            "source": 22,
+            "target": 23,
+            "value": 1
+        },
+        {
+            "source": 22,
+            "target": 24,
+            "value": 2
+        },
+        {
+            "source": 22,
+            "target": 25,
+            "value": 1
+        },
+        {
+            "source": 16,
+            "target": 22,
+            "value": 1
+        }
+    ]
+}

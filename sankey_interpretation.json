@@ -1,0 +1,991 @@
+{
+    "nodes": [
+        {
+            "name": "Interpretation/Semantics",
+            "color": "1a78b6",
+            "code": 0
+        },
+        {
+            "name": "Reading ease",
+            "color": "f18e29",
+            "code": 1
+        },
+        {
+            "name": "Risk aversion",
+            "color": "f18e29",
+            "code": 2
+        },
+        {
+            "name": "Interaction",
+            "color": "f18e29",
+            "code": 3
+        },
+        {
+            "name": "None implied",
+            "color": "f18e29",
+            "code": 4
+        },
+        {
+            "name": "Accuracy",
+            "color": "f18e29",
+            "code": 5
+        },
+        {
+            "name": "Efficiency",
+            "color": "f18e29",
+            "code": 6
+        },
+        {
+            "name": "Judgment awareness",
+            "color": "f18e29",
+            "code": 7
+        },
+        {
+            "name": "Decision quality",
+            "color": "f18e29",
+            "code": 8
+        },
+        {
+            "name": "Trust/confidence",
+            "color": "f18e29",
+            "code": 9
+        },
+        {
+            "name": "Compare visualizations",
+            "color": "77b8b3",
+            "code": 10
+        },
+        {
+            "name": "Compare users",
+            "color": "77b8b3",
+            "code": 11
+        },
+        {
+            "name": "Test impact of uncertainty",
+            "color": "77b8b3",
+            "code": 12
+        },
+        {
+            "name": "Validate visualization",
+            "color": "77b8b3",
+            "code": 13
+        },
+        {
+            "name": "Understand use",
+            "color": "77b8b3",
+            "code": 14
+        },
+        {
+            "name": "Perceived effort/ability",
+            "color": "b07aa1",
+            "code": 15
+        },
+        {
+            "name": "Spontaneous impression",
+            "color": "b07aa1",
+            "code": 16
+        },
+        {
+            "name": "Interaction logs",
+            "color": "b07aa1",
+            "code": 17
+        },
+        {
+            "name": "Probability",
+            "color": "b07aa1",
+            "code": 18
+        },
+        {
+            "name": "Self-reported action",
+            "color": "b07aa1",
+            "code": 19
+        },
+        {
+            "name": "Value/state nominal",
+            "color": "b07aa1",
+            "code": 20
+        },
+        {
+            "name": "Subjective confidence",
+            "color": "b07aa1",
+            "code": 21
+        },
+        {
+            "name": "Value/state continuous",
+            "color": "b07aa1",
+            "code": 22
+        },
+        {
+            "name": "Count",
+            "color": "b07aa1",
+            "code": 23
+        },
+        {
+            "name": "Self-reported intention",
+            "color": "b07aa1",
+            "code": 24
+        },
+        {
+            "name": "Self-reported satisfaction",
+            "color": "b07aa1",
+            "code": 25
+        },
+        {
+            "name": "Willingness to pay",
+            "color": "b07aa1",
+            "code": 26
+        },
+        {
+            "name": "Decision",
+            "color": "b07aa1",
+            "code": 27
+        },
+        {
+            "name": "Rank by data attribute",
+            "color": "b07aa1",
+            "code": 28
+        },
+        {
+            "name": "Change in perception/belief",
+            "color": "b07aa1",
+            "code": 29
+        },
+        {
+            "name": "Uncertainty association",
+            "color": "b07aa1",
+            "code": 30
+        },
+        {
+            "name": "Time",
+            "color": "b07aa1",
+            "code": 31
+        },
+        {
+            "name": "Shape of internal model",
+            "color": "b07aa1",
+            "code": 32
+        },
+        {
+            "name": "Error",
+            "color": "b07aa1",
+            "code": 33
+        },
+        {
+            "name": "Correlation with ground truth",
+            "color": "b07aa1",
+            "code": 34
+        },
+        {
+            "name": "Compliance with strategy",
+            "color": "b07aa1",
+            "code": 35
+        },
+        {
+            "name": "Risk avoidance",
+            "color": "b07aa1",
+            "code": 36
+        },
+        {
+            "name": "Affective association",
+            "color": "b07aa1",
+            "code": 37
+        },
+        {
+            "name": "Bias",
+            "color": "b07aa1",
+            "code": 38
+        },
+        {
+            "name": "Strategy",
+            "color": "b07aa1",
+            "code": 39
+        },
+        {
+            "name": "Text entry",
+            "color": "edc848",
+            "code": 40
+        },
+        {
+            "name": "Multiple choice",
+            "color": "edc848",
+            "code": 41
+        },
+        {
+            "name": "Likert",
+            "color": "edc848",
+            "code": 42
+        },
+        {
+            "name": "NA/Implicit",
+            "color": "edc848",
+            "code": 43
+        },
+        {
+            "name": "Slider",
+            "color": "edc848",
+            "code": 44
+        },
+        {
+            "name": "Graphical",
+            "color": "edc848",
+            "code": 45
+        },
+        {
+            "name": "Unspecified",
+            "color": "edc848",
+            "code": 46
+        },
+        {
+            "name": "Spoken response",
+            "color": "b07aa1",
+            "code": 47
+        },
+        {
+            "name": "Think-aloud protocol",
+            "color": "edc848",
+            "code": 48
+        },
+        {
+            "name": "Summary stats",
+            "color": "58a14d",
+            "code": 49
+        },
+        {
+            "name": "Frequentist NHST",
+            "color": "58a14d",
+            "code": 50
+        },
+        {
+            "name": "Qualitative coding",
+            "color": "58a14d",
+            "code": 51
+        },
+        {
+            "name": "Bayesian estimation",
+            "color": "58a14d",
+            "code": 52
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 1,
+            "value": 13
+        },
+        {
+            "source": 0,
+            "target": 2,
+            "value": 9
+        },
+        {
+            "source": 0,
+            "target": 3,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 4,
+            "value": 22
+        },
+        {
+            "source": 0,
+            "target": 5,
+            "value": 12
+        },
+        {
+            "source": 0,
+            "target": 6,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 7,
+            "value": 3
+        },
+        {
+            "source": 0,
+            "target": 8,
+            "value": 1
+        },
+        {
+            "source": 0,
+            "target": 9,
+            "value": 2
+        },
+        {
+            "source": 1,
+            "target": 10,
+            "value": 12
+        },
+        {
+            "source": 1,
+            "target": 11,
+            "value": 2
+        },
+        {
+            "source": 1,
+            "target": 13,
+            "value": 3
+        },
+        {
+            "source": 1,
+            "target": 14,
+            "value": 2
+        },
+        {
+            "source": 2,
+            "target": 10,
+            "value": 3
+        },
+        {
+            "source": 2,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 2,
+            "target": 14,
+            "value": 6
+        },
+        {
+            "source": 3,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 4,
+            "target": 10,
+            "value": 14
+        },
+        {
+            "source": 4,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 4,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 4,
+            "target": 13,
+            "value": 1
+        },
+        {
+            "source": 4,
+            "target": 14,
+            "value": 12
+        },
+        {
+            "source": 5,
+            "target": 10,
+            "value": 8
+        },
+        {
+            "source": 5,
+            "target": 11,
+            "value": 3
+        },
+        {
+            "source": 5,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 5,
+            "target": 14,
+            "value": 3
+        },
+        {
+            "source": 6,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 7,
+            "target": 14,
+            "value": 3
+        },
+        {
+            "source": 8,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 8,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 9,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 9,
+            "target": 12,
+            "value": 1
+        },
+        {
+            "source": 10,
+            "target": 15,
+            "value": 6
+        },
+        {
+            "source": 10,
+            "target": 16,
+            "value": 7
+        },
+        {
+            "source": 10,
+            "target": 17,
+            "value": 3
+        },
+        {
+            "source": 10,
+            "target": 18,
+            "value": 2
+        },
+        {
+            "source": 10,
+            "target": 19,
+            "value": 1
+        },
+        {
+            "source": 10,
+            "target": 20,
+            "value": 3
+        },
+        {
+            "source": 10,
+            "target": 21,
+            "value": 4
+        },
+        {
+            "source": 10,
+            "target": 22,
+            "value": 3
+        },
+        {
+            "source": 10,
+            "target": 23,
+            "value": 2
+        },
+        {
+            "source": 10,
+            "target": 25,
+            "value": 3
+        },
+        {
+            "source": 10,
+            "target": 26,
+            "value": 1
+        },
+        {
+            "source": 10,
+            "target": 27,
+            "value": 2
+        },
+        {
+            "source": 11,
+            "target": 15,
+            "value": 2
+        },
+        {
+            "source": 11,
+            "target": 16,
+            "value": 1
+        },
+        {
+            "source": 11,
+            "target": 18,
+            "value": 1
+        },
+        {
+            "source": 11,
+            "target": 27,
+            "value": 1
+        },
+        {
+            "source": 12,
+            "target": 15,
+            "value": 1
+        },
+        {
+            "source": 12,
+            "target": 19,
+            "value": 1
+        },
+        {
+            "source": 12,
+            "target": 26,
+            "value": 1
+        },
+        {
+            "source": 12,
+            "target": 27,
+            "value": 2
+        },
+        {
+            "source": 13,
+            "target": 16,
+            "value": 3
+        },
+        {
+            "source": 13,
+            "target": 19,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 15,
+            "value": 5
+        },
+        {
+            "source": 14,
+            "target": 16,
+            "value": 2
+        },
+        {
+            "source": 14,
+            "target": 18,
+            "value": 2
+        },
+        {
+            "source": 14,
+            "target": 19,
+            "value": 4
+        },
+        {
+            "source": 14,
+            "target": 20,
+            "value": 3
+        },
+        {
+            "source": 14,
+            "target": 21,
+            "value": 3
+        },
+        {
+            "source": 14,
+            "target": 22,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 24,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 25,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 27,
+            "value": 2
+        },
+        {
+            "source": 14,
+            "target": 28,
+            "value": 1
+        },
+        {
+            "source": 15,
+            "target": 29,
+            "value": 1
+        },
+        {
+            "source": 15,
+            "target": 40,
+            "value": 2
+        },
+        {
+            "source": 15,
+            "target": 41,
+            "value": 1
+        },
+        {
+            "source": 15,
+            "target": 42,
+            "value": 6
+        },
+        {
+            "source": 15,
+            "target": 46,
+            "value": 1
+        },
+        {
+            "source": 16,
+            "target": 30,
+            "value": 3
+        },
+        {
+            "source": 16,
+            "target": 33,
+            "value": 1
+        },
+        {
+            "source": 16,
+            "target": 37,
+            "value": 1
+        },
+        {
+            "source": 16,
+            "target": 38,
+            "value": 1
+        },
+        {
+            "source": 16,
+            "target": 40,
+            "value": 1
+        },
+        {
+            "source": 16,
+            "target": 41,
+            "value": 3
+        },
+        {
+            "source": 17,
+            "target": 31,
+            "value": 3
+        },
+        {
+            "source": 18,
+            "target": 32,
+            "value": 2
+        },
+        {
+            "source": 18,
+            "target": 33,
+            "value": 2
+        },
+        {
+            "source": 19,
+            "target": 39,
+            "value": 1
+        },
+        {
+            "source": 19,
+            "target": 40,
+            "value": 3
+        },
+        {
+            "source": 19,
+            "target": 41,
+            "value": 1
+        },
+        {
+            "source": 19,
+            "target": 47,
+            "value": 1
+        },
+        {
+            "source": 20,
+            "target": 33,
+            "value": 1
+        },
+        {
+            "source": 20,
+            "target": 35,
+            "value": 1
+        },
+        {
+            "source": 20,
+            "target": 38,
+            "value": 2
+        },
+        {
+            "source": 20,
+            "target": 41,
+            "value": 1
+        },
+        {
+            "source": 21,
+            "target": 34,
+            "value": 1
+        },
+        {
+            "source": 21,
+            "target": 35,
+            "value": 1
+        },
+        {
+            "source": 21,
+            "target": 46,
+            "value": 2
+        },
+        {
+            "source": 22,
+            "target": 34,
+            "value": 1
+        },
+        {
+            "source": 22,
+            "target": 35,
+            "value": 1
+        },
+        {
+            "source": 22,
+            "target": 41,
+            "value": 1
+        },
+        {
+            "source": 23,
+            "target": 36,
+            "value": 2
+        },
+        {
+            "source": 24,
+            "target": 42,
+            "value": 1
+        },
+        {
+            "source": 25,
+            "target": 37,
+            "value": 1
+        },
+        {
+            "source": 25,
+            "target": 44,
+            "value": 1
+        },
+        {
+            "source": 25,
+            "target": 46,
+            "value": 2
+        },
+        {
+            "source": 26,
+            "target": 46,
+            "value": 1
+        },
+        {
+            "source": 27,
+            "target": 39,
+            "value": 1
+        },
+        {
+            "source": 27,
+            "target": 41,
+            "value": 2
+        },
+        {
+            "source": 27,
+            "target": 42,
+            "value": 2
+        },
+        {
+            "source": 27,
+            "target": 46,
+            "value": 1
+        },
+        {
+            "source": 28,
+            "target": 46,
+            "value": 1
+        },
+        {
+            "source": 29,
+            "target": 42,
+            "value": 1
+        },
+        {
+            "source": 30,
+            "target": 40,
+            "value": 1
+        },
+        {
+            "source": 30,
+            "target": 41,
+            "value": 1
+        },
+        {
+            "source": 30,
+            "target": 42,
+            "value": 1
+        },
+        {
+            "source": 31,
+            "target": 43,
+            "value": 2
+        },
+        {
+            "source": 31,
+            "target": 46,
+            "value": 1
+        },
+        {
+            "source": 32,
+            "target": 44,
+            "value": 1
+        },
+        {
+            "source": 32,
+            "target": 45,
+            "value": 2
+        },
+        {
+            "source": 33,
+            "target": 40,
+            "value": 2
+        },
+        {
+            "source": 33,
+            "target": 41,
+            "value": 2
+        },
+        {
+            "source": 33,
+            "target": 44,
+            "value": 1
+        },
+        {
+            "source": 34,
+            "target": 40,
+            "value": 2
+        },
+        {
+            "source": 35,
+            "target": 40,
+            "value": 2
+        },
+        {
+            "source": 35,
+            "target": 41,
+            "value": 1
+        },
+        {
+            "source": 36,
+            "target": 40,
+            "value": 2
+        },
+        {
+            "source": 37,
+            "target": 42,
+            "value": 1
+        },
+        {
+            "source": 37,
+            "target": 48,
+            "value": 1
+        },
+        {
+            "source": 38,
+            "target": 41,
+            "value": 3
+        },
+        {
+            "source": 39,
+            "target": 48,
+            "value": 2
+        },
+        {
+            "source": 40,
+            "target": 49,
+            "value": 12
+        },
+        {
+            "source": 40,
+            "target": 50,
+            "value": 8
+        },
+        {
+            "source": 40,
+            "target": 51,
+            "value": 4
+        },
+        {
+            "source": 41,
+            "target": 49,
+            "value": 12
+        },
+        {
+            "source": 41,
+            "target": 50,
+            "value": 14
+        },
+        {
+            "source": 42,
+            "target": 49,
+            "value": 4
+        },
+        {
+            "source": 42,
+            "target": 50,
+            "value": 12
+        },
+        {
+            "source": 43,
+            "target": 49,
+            "value": 2
+        },
+        {
+            "source": 43,
+            "target": 50,
+            "value": 2
+        },
+        {
+            "source": 43,
+            "target": 51,
+            "value": 1
+        },
+        {
+            "source": 44,
+            "target": 49,
+            "value": 4
+        },
+        {
+            "source": 44,
+            "target": 50,
+            "value": 2
+        },
+        {
+            "source": 44,
+            "target": 52,
+            "value": 1
+        },
+        {
+            "source": 45,
+            "target": 49,
+            "value": 2
+        },
+        {
+            "source": 46,
+            "target": 49,
+            "value": 6
+        },
+        {
+            "source": 46,
+            "target": 50,
+            "value": 3
+        },
+        {
+            "source": 46,
+            "target": 51,
+            "value": 1
+        },
+        {
+            "source": 47,
+            "target": 49,
+            "value": 1
+        },
+        {
+            "source": 47,
+            "target": 51,
+            "value": 1
+        },
+        {
+            "source": 48,
+            "target": 49,
+            "value": 3
+        },
+        {
+            "source": 48,
+            "target": 51,
+            "value": 3
+        }
+    ]
+}
