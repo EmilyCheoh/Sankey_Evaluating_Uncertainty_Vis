@@ -2,243 +2,303 @@
     "nodes": [
         {
             "name": "Performance",
-            "color": "1a78b6"
+            "color": "1a78b6",
+            "code": 0
         },
         {
             "name": "Accuracy",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code": 1
         },
         {
             "name": "Reading ease",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":2
         },
         {
             "name": "Efficiency",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":3
         },
         {
             "name": "Satisfaction",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":4
         },
         {
             "name": "Recall/memory",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":5
         },
         {
             "name": "Judgment awareness",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":6
         },
         {
             "name": "Risk aversion",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":7
         },
         {
             "name": "Interaction",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":8
         },
         {
             "name": "Decision quality",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":9
         },
         {
             "name": "None implied",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":10
         },
         {
             "name": "Trust/confidence",
-            "color": "f18e29"
+            "color": "f18e29",
+            "code":11
         },
         {
             "name": "Compare visualizations",
-            "color": "77b8b3"
+            "color": "77b8b3",
+            "code":12
         },
         {
             "name": "Compare users",
-            "color": "77b8b3"
+            "color": "77b8b3",
+            "code":13
         },
         {
             "name": "Test impact of uncertainty",
-            "color": "77b8b3"
+            "color": "77b8b3",
+            "code":14
         },
         {
             "name": "Understand use",
-            "color": "77b8b3"
+            "color": "77b8b3",
+            "code":15
         },
         {
             "name": "Validate visualization",
-            "color": "77b8b3"
+            "color": "77b8b3",
+            "code":16
         },
         {
             "name": "Count",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":17
         },
         {
             "name": "Rank by uncertainty",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":18
         },
         {
             "name": "Perceived effort/ability",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":19
         },
         {
             "name": "Value/state nominal",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":20
         },
         {
             "name": "Probability",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":21
         },
         {
             "name": "Self-reported satisfaction",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":22
         },
         {
             "name": "Self-reported intention",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":23
         },
         {
             "name": "Decision",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":24
         },
         {
             "name": "Value/state continuous",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":25
         },
         {
             "name": "Subjective confidence",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":26
         },
         {
             "name": "Interaction logs",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":27
         },
         {
             "name": "Self-reported action",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":28
         },
         {
             "name": "Recalled value/state",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":29
         },
         {
             "name": "Eye movement",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":30
         },
         {
             "name": "Willingness to pay",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":31
         },
         {
             "name": "Perceived risk/reliability",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":32
         },
         {
             "name": "Rank by data attribute",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":33
         },
         {
             "name": "Spontaneous impression",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":34
         },
         {
             "name": "Range of values",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":35
         },
         {
             "name": "Galvanized Skin Response (GSR)",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":36
         },
         {
             "name": "Value/state ordinal",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":37
         },
         {
             "name": "Not specified",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":38
         },
         {
             "name": "Error",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":39
         },
         {
             "name": "Bias",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":40
         },
         {
             "name": "Time",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":41
         },
         {
             "name": "Distance between fixations",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":42
         },
         {
             "name": "Frequency of short distances",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":43
         },
         {
             "name": "Correlation with ground truth",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":44
         },
         {
             "name": "Compliance with strategy",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":45
         },
         {
             "name": "Utility Maximization",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":46
         },
         {
             "name": "Change in perception/belief",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":47
         },
         {
             "name": "Variance",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":48
         },
         {
             "name": "Number of interactions",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":49
         },
         {
             "name": "Strategy",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":50
         },
         {
             "name": "GSR features",
-            "color": "b07aa1"
+            "color": "b07aa1",
+            "code":51
         },
         {
             "name": "Direct selection",
-            "color": "edc848"
+            "color": "edc848",
+            "code":52
         },
         {
             "name": "Text entry",
-            "color": "edc848"
+            "color": "edc848",
+            "code":53
         },
         {
             "name": "Multiple choice",
-            "color": "edc848"
+            "color": "edc848",
+            "code":54
         },
         {
             "name": "Likert",
-            "color": "edc848"
+            "color": "edc848",
+            "code":55
         },
         {
             "name": "NA/Implicit",
-            "color": "edc848"
+            "color": "edc848",
+            "code":56
         },
         {
             "name": "Graphical",
-            "color": "edc848"
+            "color": "edc848",
+            "code":57
         },
         {
             "name": "Physical apparatus",
-            "color": "edc848"
+            "color": "edc848",
+            "code":58
         },
         {
             "name": "Spoken response",
-            "color": "edc848"
+            "color": "edc848",
+            "code":59
         },
         {
             "name": "Eye tracking",
@@ -1555,6 +1615,11 @@
         {
             "source": 64,
             "target": 66,
+            "value": 1
+        },
+        {
+            "source": 39,
+            "target": 59,
             "value": 1
         }
     ]
